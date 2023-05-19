@@ -1,0 +1,3 @@
+# throttle
+
+RATE_LIMIT_PER_REQUEST=2
