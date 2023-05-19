@@ -17,6 +17,6 @@ use App\Http\Controllers\OrganizationController;
 
 
 $rate_limit_route = env('RATE_LIMIT_PER_REQUEST');
-Route::middleware(['web', "throttle:{$rate_limit_route},0.0167"])->group(function () {
+Route::middleware(['web', "throttle:{$rate_limit_route},5"])->group(function () {
     Route::get('', [OrganizationController::class, 'hello'] )->name('image.get'); 
 });
